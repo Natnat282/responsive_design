@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Arimo", sans-serif;
+    }
+body{
+        background: rgb(15, 15, 15);
+        color: white;
+}
+#header {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    padding: 20%;
+    background: rgb(119,16,247);
+    width: 100%;
+    padding: 3rem 12%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+.logo img {
+    border-radius: 5%;
+    width: 60vw;
+    height: 20vw;
+   /* box-shadow: 0 0 18px #ca0bf5;*/
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    margin-top: -5%;
+    margin-left: -10%;
+    
+}
+.logo p {
+    margin-left: 25px;
+    font-size: 1rem;
+   text-align: left;
+   font-weight: 500;
+   line-height: 2;
+   margin-top: -5%;
+}
+span{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ca0bf5;
+}
+
+
+#menu #container{
+        width: 100%;
+        padding: 1.5rem 12%;
+        background: rgb(119,16,247);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        border: 0.2rem solid rgba(255, 255, 255, 0); 
+        margin-top: -3%;   
+}
+#menu #container .principal{
+    font-size: 1.3rem;
+    color: rgb(49, 49, 49);
+    display: inline;
+    justify-content: left;
+    text-align: center;
+    font-weight: 300;
+    margin-left: 3rem;
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+#menu #container a:hover{
+    color: #ca0bf5;
+    border-bottom: 3px solid #ca0bf5;
+}
+.Bootstrap {
+    margin-left: 5%;
+    padding: auto;
+    margin-right: 5%;
+}
+.Bootstrap h2{
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    box-shadow: 0 0 18px #ca0bf5;
+  }
+ 
+ .Bootstrap-container{
+     display: grid;
+     align-items: center;
+     gap:2.5rem;
+ }
+  .Bootstrap-box{
+    position: relative; 
+    height: 300px;
+    overflow:hidden;
+ }
+ 
+ 
+ .Bootstrap-info{
+     gap: 1rem;
+     font-size: 20px;
+     line-height: 2;
+  }
+
+  .componentes{
+    margin-left: 5%;
+    padding: auto;
+    margin-right: 5%;
+}
+.componentes h2{
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    box-shadow: 0 0 18px #ca0bf5;
+  }
+ 
+ .componentes-container{
+     display: grid;
+     align-items: center;
+     gap:2.5rem;
+ }
+  .componentes-box{
+    position: relative; 
+    height: 1050px;
+    overflow:hidden;
+ }
+ 
+ 
+ .componentes-info p{
+
+     font-size: 20px;
+     line-height: 2;
+  }
+  .componentes-info ul{
+    gap: 1rem;
+    font-size: 20px;
+    line-height: 2;
+    list-style-type: none;
+ }
+ .componentes-info ul li::before {
+    content: "•";
+    color: #ca0bf5; 
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .imagenes{
+    background-color:rgb(15,15,15); 
+    padding: 20%;
+ }
+ 
+ .imagenes-container{
+     display: grid;
+     grid-template-columns: repeat(3.1fr);
+     align-items: center;
+     gap:2.5rem;
+     margin-top: -30%;
+ }
+ .imagenes-container .imagenes-row{
+    position: relative; 
+    height: 550px;
+    overflow:hidden;
+    display: flex;
+    border-radius: 2rem; 
+    border: 3px solid transparent;
+    transition: 0.5s ease-in-out;
+ }
+
+ .imagenes-row:hover{
+   border: 3px solid #ca0bf5;  
+ }
+ 
+  .imagenes-row img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: 0.5 ease-in-out;
+  }
+  .imagenes-row:hover img{
+     transition: scale(1.05);
+  }
+ 
+.footer2{
+    border-top: double;
+    clear: both;
+    height: 66px;
+    text-align: center;
+    color: #ca0bf5;
+    padding-top: 15px;
+  }
+  .contact-container address a {
+    text-decoration: none; /* quita el subrayado del enlace */
+    color: #ca0bf5; /* cambia el color del texto del enlace */
+    font-size: 15px;
+    display: flex; /* agrega un contenedor flexbox */
+  justify-content: center; /* centra horizontalmente el contenido */
+  align-items: center; /* centra verticalmente el contenido */
+  }
+  .contact-container address p {
+    color: white; /* cambia el color del texto del enlace */
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center; /* centra el texto horizontalmente */
+  }
+ 
+
+
+  @media only screen and (max-width: 720px) {
+    #container, #container .principal{
+      width: 100%;
+      border: 0px;
+    }
+    #container, #container .last{
+        width: 100%;
+        border-right: 0px;
+      }
+ 
+}
+
+@media only screen and (max-width: 720px) {
+    #header #header .logo{
+      width: 100%;
+  
+    }
+
+    #Bootstrap{
+        width: 0%;
+        display: none;
+    }
+
+   
+}  
